@@ -151,7 +151,7 @@ object YoutubeRepository {
             ChannelPage(
                 name = info.name,
                 subscriberCount = info.subscriberCount,
-                videos = info.relatedItems
+                videos = info.getRelatedItems()
                     .filterIsInstance<StreamInfoItem>()
                     .map { it.toVideoItem() }
             )
