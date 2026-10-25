@@ -64,6 +64,7 @@ import com.ytube.app.ui.SubscriptionsScreen
 import com.ytube.app.ui.YTubeTheme
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 
 private enum class Tab(val label: String) {
     Home("首页"),
