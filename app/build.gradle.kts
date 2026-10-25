@@ -82,7 +82,7 @@ dependencies {
 
     // Google 登录：标准 Google Sign-In API（由 MicroG 的 GmsCore 实现响应）
     implementation("com.google.android.gms:play-services-auth:21.2.0")
-    implementation("androidx.security:security-crypto:1.0.0")
+    implementation("androidx.security:security-crypto:1.1.0")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
