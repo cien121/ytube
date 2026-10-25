@@ -12,8 +12,8 @@ android {
         applicationId = "com.ytube.app"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 3
+        versionName = "0.3.0"
         // Server client ID 占位：仅用于 Google Sign-In 的 requestIdToken（可选，不填也能登录）。
         // 用户提供真实 ID 后改这里。注意：这不是 OAuth 网页流程，登录全程由 MicroG 原生处理。
         buildConfigField("String", "YTUBE_SERVER_CLIENT_ID", "\"YOUR_SERVER_CLIENT_ID.apps.googleusercontent.com\"")
@@ -72,6 +72,8 @@ dependencies {
     implementation("androidx.media3:media3-exoplayer:1.4.1")
     implementation("androidx.media3:media3-ui:1.4.1")
     implementation("androidx.media3:media3-common:1.4.1")
+    // Media3 会话：后台播放通知栏控制（官方 Premium 的后台播放，这里免费）
+    implementation("androidx.media3:media3-session:1.4.1")
 
     // NewPipeExtractor (YouTube 数据，无需 API key)
     implementation("com.github.TeamNewPipe:NewPipeExtractor:v0.26.5")
